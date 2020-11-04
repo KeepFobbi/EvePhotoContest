@@ -1,17 +1,37 @@
 body{
-    background-image: url("https://cdn.hipwallpaper.com/i/89/25/NmiRKl.jpg");
+    background-image: url("/img/main.jpg");
     background-attachment: fixed;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.main-ph-container{
-
+main{
+    flex-grow: 1;
 }
 
 nav{
-    background-image: url("https://cdn.hipwallpaper.com/i/89/25/NmiRKl.jpg");
+    background-image: url("/img/main.jpg");
 }
 footer{
-    font-size: 200%;
-    background-image: url("https://cdn.hipwallpaper.com/i/89/25/NmiRKl.jpg");
+    background-image: url("/img/main.jpg");
+    flex-shrink: 0;
+}
+
+.thumb img {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.thumb img:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.thumb {
+    padding: 5px;
 }
